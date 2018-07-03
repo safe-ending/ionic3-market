@@ -13,3 +13,6 @@ ionic3简单实例
 
 ![Alt text](https://github.com/safe-ending/ionic3-market/tree/master/src/assets/1.jpg)
 ![Alt text](https://github.com/safe-ending/ionic3-market/tree/master/src/assets/2.jpg)
+
+![](https://github.com/safe-ending/ionic3-market/tree/master/src/assets/1.jpg)
+![](https://github.com/safe-ending/ionic3-market/tree/master/src/assets/2.jpg)
