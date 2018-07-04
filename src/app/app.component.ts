@@ -17,7 +17,9 @@ export class MyApp {
       statusBar.styleLightContent();
       statusBar.show()
       statusBar.backgroundColorByName("#551b1d23")
-      splashScreen.hide();
+      setTimeout(function () {
+        splashScreen.hide();
+      }, 1000);
     });
   }
 }
