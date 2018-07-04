@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
 
 /**
  * Generated class for the OrderListPage page.
@@ -15,9 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class OrderListPage {
 
-  testArray:string[]=[ '菜单一','菜单二' ,'菜单三' ,'菜单四' ];
-  testSegment:string=this.testArray[0];
-  constructor(public navCtrl: NavController) {
+  testArray: string[] = ['菜单一', '菜单二', '菜单三', '菜单四'];
+  testSegment: string = this.testArray[0];
+  terrace:string;
+
+  constructor(public navCtrl: NavController,private platform: Platform) {
+
+    if (this.platform.is('ios')) {
+      this.terrace = 'ios'
+    } else if (this.platform.is('android')) {
+      this.terrace = 'android'
+    }
   }
 
   swipeEvnet(event) {
