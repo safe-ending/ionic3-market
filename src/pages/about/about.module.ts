@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import {Alert, AlertController, IonicPageModule} from 'ionic-angular';
 import { AboutPage } from './about';
 
 @NgModule({
@@ -9,5 +9,8 @@ import { AboutPage } from './about';
   imports: [
     IonicPageModule.forChild(AboutPage),
   ],
+  providers:[
+    AlertController
+  ]
 })
 export class AboutPageModule {}

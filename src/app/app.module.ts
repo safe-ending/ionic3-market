@@ -15,7 +15,8 @@ import {HttpModule} from "@angular/http";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -25,7 +26,8 @@ import {HttpModule} from "@angular/http";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AppService
+    AppService,
+
   ]
 })
 export class AppModule {}

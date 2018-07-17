@@ -17,10 +17,12 @@ export class OrderListPage {
 
   testArray: string[] = ['菜单一', '菜单二', '菜单三', '菜单四'];
   testSegment: string = this.testArray[0];
-  terrace:string;
+  terrace: string;
 
-  constructor(public navCtrl: NavController,private platform: Platform) {
+  constructor(public navCtrl: NavController, private platform: Platform) {
 
+
+    //判断平台  在html中通过ngif控制样式
     if (this.platform.is('ios')) {
       this.terrace = 'ios'
     } else if (this.platform.is('android')) {
